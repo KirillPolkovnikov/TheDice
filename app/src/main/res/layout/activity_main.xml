@@ -35,10 +35,11 @@
         android:layout_height="85dp"
         android:background="#E6C5C5"
         android:text=""
+        android:hint="6"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         android:textStyle="bold"
-        android:textSize="15sp"
+        android:textSize="70sp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="378dp" />
