@@ -12,8 +12,9 @@ import java.text.BreakIterator;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageButton imageButton;
+    private static ImageButton imageButton;
     private int textView;
+    private int i;
 
 
     @Override
@@ -23,9 +24,11 @@ public class MainActivity extends AppCompatActivity {
         imageButton = findViewById(R.id.imageButton);
         imageButton.setOnClickListener(listener);
         TextView textView1 = findViewById(R.id.textView);
+
                                                   }
 
         private View.OnClickListener listener = new View.OnClickListener() {
+
             @Override
             public void onClick(View view){
                 int min = 1;
@@ -34,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
                 Random random = new Random();
                 int i = random.nextInt(diff + 1);
                 i += min;
-                textView = i;
+                textView.setText((int) i);
+
 
 
 

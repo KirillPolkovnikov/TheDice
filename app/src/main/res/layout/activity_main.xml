@@ -34,15 +34,16 @@
         android:layout_width="94dp"
         android:layout_height="85dp"
         android:background="#E6C5C5"
-        android:text=""
-        android:hint="6"
         android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textStyle="bold"
-        android:textSize="70sp"
+        android:hint="6"
+        android:text=""
         android:textColor="@color/black"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="378dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
