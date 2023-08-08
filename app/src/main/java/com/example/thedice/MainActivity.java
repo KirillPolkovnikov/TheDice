@@ -13,8 +13,9 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private static ImageButton imageButton;
-    private int textView;
+    private int textView1 ;
     private int i;
+
 
 
     @Override
@@ -23,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         imageButton = findViewById(R.id.imageButton);
         imageButton.setOnClickListener(listener);
-        TextView textView1 = findViewById(R.id.textView);
+
+
 
                                                   }
 
@@ -31,13 +33,18 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view){
+                TextView textView1 = findViewById(R.id.textView);
                 int min = 1;
                 int max = 6;
                 int diff = max - min;
                 Random random = new Random();
                 int i = random.nextInt(diff + 1);
                 i += min;
-                textView.setText((int) i);
+                textView1.setText(i);
+
+
+
+
 
 
 
